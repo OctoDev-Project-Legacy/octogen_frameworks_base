@@ -18,20 +18,20 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
-    <string name="system_error_vendorprint">Your vendor image does not match the system. Please flash the <xliff:g id="string">%s</xliff:g> vendor image for your device</string>
+    <string name="system_error_vendorprint">Внимание! У вас устарел vendor! Пожалуйста, прошейте vendor версии <xliff:g id="string">%s</xliff:g> для вашего устройства. В противном случае система может работать не корректно!</string>
 
     <!-- Reboot Confirmation Dialog.  Message in the confirmation dialog
          when the user asks to reboot. [CHAR LIMIT=NONE] -->
-    <string name="reboot_confirm">Do you want to reboot?</string>
-    <string name="reboot_title">Reboot</string>
+    <string name="reboot_confirm">Куда перезагрузиться?</string>
+    <string name="reboot_title">Перезагрузка</string>
     <!-- advanced reboot to bootloader. -->
-    <string name="reboot_to_bootloader_title">Reboot bootloader</string>
-    <string name="reboot_to_bootloader_message">Rebooting\u2026</string>
+    <string name="reboot_to_bootloader_title">Загрузчик</string>
+    <string name="reboot_to_bootloader_message">Перезагрузка\u2026</string>
     <!-- advanced reboot to recovery. -->
-    <string name="reboot_to_recovery_title">Reboot recovery</string>
-    <string name="reboot_to_recovery_message">Rebooting\u2026</string>
+    <string name="reboot_to_recovery_title">Режим восстановления</string>
+    <string name="reboot_to_recovery_message">Перезагрузка\u2026</string>
     <!-- advanced reboot system -->
-    <string name="reboot_system_title">Reboot system</string>
-    <string name="reboot_system_message">Rebooting\u2026</string>
+    <string name="reboot_system_title">Перезагрузка системы</string>
+    <string name="reboot_system_message">Перезагрузка\u2026</string>
 
 </resources>

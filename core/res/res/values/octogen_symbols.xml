@@ -32,4 +32,14 @@
   <java-symbol type="bool" name="config_intrusiveBatteryLed" />
   <java-symbol type="bool" name="config_multiColorBatteryLed" />
   <java-symbol type="bool" name="config_ledCanPulse" />
+
+  <java-symbol type="string" name="reboot_title" />
+  <java-symbol type="string" name="reboot_confirm" />
+  <!-- Power menu reboot -->
+  <java-symbol name="reboot_to_bootloader_title" type="string" />
+  <java-symbol name="reboot_to_bootloader_message" type="string" />
+  <java-symbol name="reboot_to_recovery_title" type="string" />
+  <java-symbol name="reboot_to_recovery_message" type="string" />
+  <java-symbol name="reboot_system_title" type="string" />
+  <java-symbol name="reboot_system_message" type="string" />
 </resources>
