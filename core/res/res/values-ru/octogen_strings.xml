@@ -20,10 +20,6 @@
     <!-- Vendor mismatched fingerprint warning [CHAR LIMIT=NONE] -->
     <string name="system_error_vendorprint">Внимание! У вас устарел vendor! Пожалуйста, прошейте vendor версии <xliff:g id="string">%s</xliff:g> для вашего устройства. В противном случае система может работать не корректно!</string>
 
-    <!-- Reboot Confirmation Dialog.  Message in the confirmation dialog
-         when the user asks to reboot. [CHAR LIMIT=NONE] -->
-    <string name="reboot_confirm">Куда перезагрузиться?</string>
-    <string name="reboot_title">Перезагрузка</string>
     <!-- advanced reboot to bootloader. -->
     <string name="reboot_to_bootloader_title">Загрузчик</string>
     <string name="reboot_to_bootloader_message">Перезагрузка\u2026</string>
@@ -31,7 +27,6 @@
     <string name="reboot_to_recovery_title">Режим восстановления</string>
     <string name="reboot_to_recovery_message">Перезагрузка\u2026</string>
     <!-- advanced reboot system -->
-    <string name="reboot_system_title">Перезагрузка системы</string>
+    <string name="reboot_system_title">Перезагрузка</string>
     <string name="reboot_system_message">Перезагрузка\u2026</string>
-
 </resources>

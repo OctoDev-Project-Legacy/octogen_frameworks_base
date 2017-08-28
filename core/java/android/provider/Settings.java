@@ -3968,7 +3968,7 @@ public final class Settings {
          * the setting value. See an example above.
          */
 
-        // ABC custom system settings
+        // Octogen custom system settings
         /**
          * Double tap on navbar to sleep
          * @hide
@@ -4060,6 +4060,16 @@ public final class Settings {
         * @hide
         */
        public static final String BATTERY_LIGHT_REALLYFULL_COLOR = "battery_light_reallyfull_color";
+
+        /**
+         * @hide
+         */
+        public static final String GLOBAL_ACTIONS_LIST = "global_actions_list";
+
+        /**
+         * @hide
+         */
+         public static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
@@ -4232,6 +4242,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(BATTERY_LIGHT_FULL_COLOR);
             PRIVATE_SETTINGS.add(BATTERY_LIGHT_REALLYFULL_COLOR);
             PRIVATE_SETTINGS.add(BATTERY_LIGHT_LOW_BLINKING);
+            PRIVATE_SETTINGS.add(POWER_MENU_ANIMATIONS);
         }
 
         /**
@@ -7157,6 +7168,19 @@ public final class Settings {
          * @hide
          */
         public static final String NOTIFICATION_BADGING = "notification_badging";
+
+        // Omni additions start secure
+
+        /**
+         *
+         * @hide
+         */
+        public static final String GLOBAL_ACTION_DNAA = "global_action_dnaa";
+
+        /**
+         * @hide
+         */
+        public static final String ADVANCED_REBOOT = "advanced_reboot";
 
         /**
          * Disable power menu on secure lock screens
