@@ -31,4 +31,17 @@
     <string name="global_action_settings">Настройки</string>
 
     <string name="statusbar_items_title">Редактирование иконок</string>
+
+    <string name="kb_left">Левый курсор клавиатуры</string>
+    <string name="kb_right">Правый курсор клавиатуры</string>
+
+    <!-- SysUI Tuner: Labels for different types of navigation bar buttons [CHAR LIMIT=60] -->
+    <string-array name="nav_bar_buttons_abc">
+        <item>Левый курсор клавиатуры</item>
+        <item>Правый курсор клавиатуры</item>
+        <item>Буфер обмена</item>
+        <item>Код кнопки</item>
+        <item>Переключатель клавиатуры</item>
+        <item>Нет</item>
+    </string-array>
 </resources>
