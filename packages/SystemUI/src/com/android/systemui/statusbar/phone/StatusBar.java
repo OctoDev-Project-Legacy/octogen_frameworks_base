@@ -752,6 +752,21 @@ public class StatusBar extends SystemUI implements DemoMode,
     private NavigationBarFragment mNavigationBar;
     private View mNavigationBarView;
 
+    // Octogen additions start
+    private class OctogenSettingsObserver extends ContentObserver {
+        OctogenSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+        }
+
+        @Override
+        public void onChange(boolean selfChange) {
+        }
+    }
+    private OctogenSettingsObserver mOctogenSettingsObserver = new OctogenSettingsObserver(mHandler);
+
     private boolean mLockscreenMediaMetadata;
 
     @Override
@@ -810,6 +825,8 @@ public class StatusBar extends SystemUI implements DemoMode,
                 true,
                 mLockscreenSettingsObserver,
                 UserHandle.USER_ALL);
+
+        mOctogenSettingsObserver.observe();
 
         mBarService = IStatusBarService.Stub.asInterface(
                 ServiceManager.getService(Context.STATUS_BAR_SERVICE));
