@@ -1023,7 +1023,9 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             resolver.registerContentObserver(Settings.Secure.getUriFor(
                     Settings.Secure.LOCK_POWER_MENU_DISABLED), false, this,
                     UserHandle.USER_ALL);
-
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.NAVIGATION_BAR_SHOW), false, this,
+                    UserHandle.USER_ALL);
             updateSettings();
         }
 
@@ -2300,16 +2302,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         // Allow the navigation bar to move on non-square small devices (phones).
         mNavigationBarCanMove = width != height && shortSizeDp < 600;
 
-        mHasNavigationBar = res.getBoolean(com.android.internal.R.bool.config_showNavigationBar);
-
-        // Allow a system property to override this. Used by the emulator.
-        // See also hasNavigationBar().
-        String navBarOverride = SystemProperties.get("qemu.hw.mainkeys");
-        if ("1".equals(navBarOverride)) {
-            mHasNavigationBar = false;
-        } else if ("0".equals(navBarOverride)) {
-            mHasNavigationBar = true;
-        }
+        mHasNavigationBar = OctogenUtils.deviceSupportNavigationBar(mContext);
 
         // For demo purposes, allow the rotation of the HDMI display to be controlled.
         // By default, HDMI locks rotation to landscape.
@@ -2441,6 +2434,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             mGlobalActionsOnLockDisable = Settings.Secure.getIntForUser(resolver,
                     Settings.Secure.LOCK_POWER_MENU_DISABLED, 0,
                     UserHandle.USER_CURRENT) != 0;
+            mHasNavigationBar = OctogenUtils.deviceSupportNavigationBar(mContext);
+
         }
         synchronized (mWindowManagerFuncs.getWindowManagerLock()) {
             WindowManagerPolicyControl.reloadFromSetting(mContext);
