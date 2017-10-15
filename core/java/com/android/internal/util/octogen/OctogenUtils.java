@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.internal.util.abc;
+package com.android.internal.util.octogen;
 
 import android.content.Context;
 import android.content.Intent;
@@ -31,7 +31,7 @@ import com.android.internal.statusbar.IStatusBarService;
 /**
  * Some custom utilities
  */
-public class AbcUtils {
+public class OctogenUtils {
 
     public static final String INTENT_SCREENSHOT = "action_take_screenshot";
     public static final String INTENT_REGION_SCREENSHOT = "action_take_region_screenshot";
